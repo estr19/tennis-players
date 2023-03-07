@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Berkshire+Swash&family=IBM+Plex+Serif&family=Marmelad&family=Pacifico&family=Permanent+Marker&display=swap');
+
 body {
   margin: 0;
   text-align: center;
@@ -83,4 +85,153 @@ a:hover {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 400;
+}
+
+.item {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  margin: 5px;
+  position: relative;
+}
+
+.parent {
+  display: flex;
+}
+
+h4 {
+  position: absolute;
+  margin-top: 35px;
+  bottom: 15px;
+  left: 40px;
+  background-color: #FFC72C;
+  color: #0C4076;
+  font-size: 0;
+  font-family: 'Bangers', cursive;
+}
+
+.location {
+  position: absolute;
+  background-color: #FFC72C;
+  color: #0C4076;
+  font-size: 0;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+
+.selected {
+  flex: 4;
+}
+
+.selected h4 {
+  position: absolute;
+  font-size: 40px;
+  bottom: 5px;
+  text-align: center;
+  transition: all 1s ease-in;
+  padding: 0px 10px;
+}
+
+.selected .location {
+  transition: all 1s ease-in;
+  bottom: 85px;
+  left: 40px;
+  text-align: right;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media all and (max-width: 940px) {
+  .parent {
+    flex-direction: column;
+    height: 150vh;
+  }
+  
+  h4 {
+    margin-top: 30px;
+    bottom: 6px;
+    left: 20px;
+  }
+
+  .selected h4 {
+    font-size: 25px;
+    bottom: 5px;
+    padding: 0px 10px;
+  }
+
+  .selected .location {
+    bottom: 60px;
+    left: 20px;
+    font-size: 15px;
+  }
+
+  .one {
+    background-position: 50% 10%;
+  }
+
+  .two {
+    background-position: 50% 15%;
+  }
+
+  .three {
+    background-position: 50% 18%;
+  }
+
+  .four {
+    background-position: 50% 20%;
+  }
+
+  .five {
+    background-position: 50% 46%;
+  }
+  
+  .six {
+    background-position: 50% 19%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .parent {
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  h4 {
+    margin-top: 30px;
+    bottom: 6px;
+    left: 20px;
+  }
+
+  .selected h4 {
+    font-size: 30px;
+    bottom: 5px;
+    padding: 0px 10px;
+  }
+
+  .selected .location {
+    bottom: 65px;
+    left: 20px;
+    font-size: 15px;
+  }
+
+  .one {
+    background-position: 50% 85%;
+  }
+
+  .two {
+    background-position: 50% 90%;
+  }
+
+  .three {
+    background-position: 50% 95%;
+  }
+
+  .four {
+    background-position: 50% 85%;
+  }
+
+  .six {
+    background-position: 50% 5%;
+  }
 }
